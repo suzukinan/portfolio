@@ -1,0 +1,17 @@
+%body
+  %header.page-header.wrapper
+    %h1
+      = link_to root_path do
+        %img.logo{alt: "shota-logo", src: "#images/logo.svg"}>/
+        ここにlogo
+    %nav
+      %ul.main-nav
+        %li.btn-1
+          = link_to aboutme_new_project_path do
+            About Me
+        %li.btn-6
+          = link_to new_project_path do
+            Photo diary
+        %li.btn-1
+          = link_to contact_new_project_path do
+            Contact
