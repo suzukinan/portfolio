@@ -1,19 +1,16 @@
 #contact.big-bg
   = render "partial/header"
   .wrapper
-    %h2.page-title Contact
+    %h2.page-title Contact Me
     %form{action: "#"}
       %div
         %label{for: "name"} お名前 / NAME
-        %input#name{name: "your-name", type: "text"}/
+        %input#name{name: "your-name", type: "text"}
       %div
-        %label{:for => "email"} メールアドレス / MAIL
-        %input#email{name: "your-email", type: "text"}/
+        %label{for: "email"} メールアドレス / MAIL
+        %input#email{name: "your-email", type: "text"}
       %div
         %label{for: "message"} メッセージ / MESSAGE
         %textarea#message{name: "your-message"}
-      %input.button{type: "submit", value: "送信"}/
-%footer
-  .wrapper
-    %p
-      %small © 2019 sample
+      %input.button{type: "submit", value: "送信"}
+= render "partial/footer"
