@@ -1,13 +1,13 @@
-%body
-  #phot.big-bg
-    = render "partial/header"
-    .phot-content.wrapper
-      %h2.page-title Photo diary
-      %p
-        今まで撮影してきた人物、風景をお楽しみください
-  .wrapper.grid
+#phot.big-bg
+  = render "partial/header"
+  .phot-content.wrapper
+    %h2.page-title Photo diary
+    %p
+      今まで撮影してきた人物、風景をお楽しみください
+.slide
+  .wrapper.grid.slider
     .item.big-box
-      %img{alt: "", src: "/assets/37677368.bce6c3dc34e149bdbce92fdd26c242f7.19041412.JPG"}/
+      = image_tag "/assets/37677368.bce6c3dc34e149bdbce92fdd26c242f7.19041412.JPG"
       /
         <p>
         笑顔。そう！笑顔なんですよ。
@@ -20,27 +20,119 @@
         </p>
         <p>人々の笑顔や優しい目、世界が決して、失くしてはいけないものを、撮り残しておきたい。
     .item
-      %img{alt: "", src: "/assets/IMG_9228.JPG"}/
+      = image_tag "/assets/IMG_9228.JPG"
       %p
     .item
-      %img{alt: "", src: "/assets/IMG_9227.JPG"}/
+      = image_tag "/assets/IMG_9227.JPG"
       %p
     .item
-      %img{alt: "", src: "/assets/IMG_9240.JPG"}/
+      = image_tag "/assets/IMG_9240.JPG"
       %p
     .item
-      %img{alt: "", src: "/assets/IMG_9241.JPG"}/
+      = image_tag "/assets/IMG_9241.JPG"
       %p
     .item
-      %img{alt: "", src: "/assets/IMG_9218.JPG"}/
+      = image_tag "/assets/IMG_9218.JPG"
       %p
     .item
-      %img{alt: "", src: "/assets/IMG_9221.JPG"}/
+      = image_tag "/assets/IMG_9221.JPG"
       %p
     .item
-      %img{alt: "", src: "/assets/IMG_9216.JPG"}/
+      = image_tag "/assets/IMG_9216.JPG"
       %p
     .item
-      %img{alt: "", src: "/assets/IMG_9226.JPG"}/
+      = image_tag "/assets/IMG_9226.JPG"
       %p
-  = render "partial/footer"
+    .item
+      = image_tag  "/assets/IMG_9229.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9232.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9233.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9236.JPG"
+      %p
+
+  -# 上記スライドの内容の表示
+  .wrapper.grid
+    .item.big-box
+      = image_tag "/assets/37677368.bce6c3dc34e149bdbce92fdd26c242f7.19041412.JPG"
+      /
+        <p>
+        笑顔。そう！笑顔なんですよ。
+        </p>
+        <p>
+        人が一番美しい時って笑った時だと思いませんか？
+        </p>
+        <p>
+        僕は笑顔が一番好きなんです。写真を通じて人が笑顔になれるっていう事を信じて写真を撮り続けたい。
+        </p>
+        <p>人々の笑顔や優しい目、世界が決して、失くしてはいけないものを、撮り残しておきたい。
+    .item
+      = image_tag "/assets/IMG_9228.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9227.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9240.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9241.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9218.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9221.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9216.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9226.JPG"
+      %p
+
+  .wrapper.grid
+    .item.resize-phot
+      = image_tag "/assets/37677211.8d624bc48a8345d29252138e76a56adc.19041412.JPG"
+      %p
+    .item.resize-phot
+      = image_tag "/assets/IMG_5558.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_5459.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_6806.jpg"
+      %p
+    .item
+      = image_tag "/assets/IMG_6929.jpg"
+      %p
+    .item
+      = image_tag "/assets/IMG_8489.jpg"
+      %p
+    .item
+      = image_tag "/assets/IMG_8540.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9235.JPG"
+      %p
+    .item
+      = image_tag  "/assets/IMG_9229.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9232.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9233.JPG"
+      %p
+    .item
+      = image_tag "/assets/IMG_9236.JPG"
+      %p
+
+
+= render "partial/footer"
