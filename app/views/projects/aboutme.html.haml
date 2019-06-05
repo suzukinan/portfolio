@@ -1,49 +1,52 @@
-%body
-  #introduction.big-bg
-    = render "partial/header"
-    .wrapper
-      %h2.page-title About Me
-  .aboutme-contents.wrapper
-    %article
-      %header.post-info
-        %h2.post-title 自己紹介
-        %p.post-date
-          5/20
-          %span 2019
-        %p.post-cat My introduction
-      %img{alt: "正面加工あり", src: "/assets/IMG_9219.JPG"}/
-      %p
-        関西出身。2019年生まれ、カメラマン。
-        半年間のカナダ留学を経て
-        広告、人物、風景、を中心に活動しております。
-        ーーーーーーーーーーーーーーーーーーーーーーーーーーー
-        ーーーーーーーーーーーーーーーーーーーーーーーーーーー
-        ーーーーーーーーーーーーーーーーーーーーーーーーーーー
-      %p
-        Englishーーーーーーーーーーーーーーーーーーーーーーー
-        ーーーーーーーーーーーーーーーーーーーーーーーーーーー
-        ーーーーーーーーーーーーーーーーーーーーーーーーーーー
-        ーーーーーーーーーーーーーーーーーーーーーーーーーーー
-        ーーーーーーーーーーーーーーーーーーーーーーーーーーー
-      %p 驚きと感動を提供する Yoshida
-    %aside
-      %h3.sub-title カテゴリー
-      %ul.sub-menu
-        %li
-          %a{href: ""} Instagram
-        %li
-          %a{href: ""} Facebook
-        %li
-          %a{href: ""} Twitter
-        %li
-          %a{href: ""} Photo diary
-      %h3.sub-title
-        言語　
-        language
-      %p
-        日本語　英語　中国語　　対応いたします。
-      %p Japanese,  English,  Chinese.
+#introduction.big-bg
+  = render "partial/header"
+  .wrapper
+    %h2.page-title About Me
+.aboutme-contents.wrapper
+  %article
+    %header.post-info
+      %h2.post-title 自己紹介
+      %p.post-date
+        5/20
+        %span 2019
+      %p.post-cat My introduction
+    = image_tag "/assets/IMG_9219.JPG"
+    %p
+      関西出身。2019年生まれ、カメラマン。
+      半年間のカナダ留学を経て
+      広告、人物、風景、を中心に活動しております。
+      ーーーーーーーーーーーーーーーーーーーーーーーーーーー
+      ーーーーーーーーーーーーーーーーーーーーーーーーーーー
+      ーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    %p
+      Englishーーーーーーーーーーーーーーーーーーーーーーー
+      ーーーーーーーーーーーーーーーーーーーーーーーーーーー
+      ーーーーーーーーーーーーーーーーーーーーーーーーーーー
+      ーーーーーーーーーーーーーーーーーーーーーーーーーーー
+      ーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    %p 驚きと感動を提供する Yoshida
+  %aside
+    %h3.sub-title カテゴリー
+    %ul.sub-menu
+      %li
+        = link_to "" do
+          Instagram
+      %li
+        = link_to "" do
+          Facebook
+      %li
+        = link_to "" do
+          Twitter
+      %li
+        = link_to new_project_path do
+          Photo diary
+    %h3.sub-title
+      言語　
+      language
+    %p
+      日本語　英語　中国語　　対応いたします。
+    %p Japanese,  English,  Chinese.
 
 
-  = render "partial/footer"
+= render "partial/footer"
 

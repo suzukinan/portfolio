@@ -1,10 +1,9 @@
-%body
-  #home.big-bg
-    = render "partial/header"
-    / home content
-    .home-content.wrapper
-      %h2.page-title Welcome to Yoshida
-      %p 写真をもっと楽しみたいあなたへ
-      = link_to new_project_path, class: "button" do
-        作品を見る
+#home.big-bg
+  = render "partial/header"
+  / home content
+  .home-content.wrapper
+    %h2.page-title Welcome to Yoshida
+    %p 写真をもっと楽しみたいあなたへ
+    = link_to new_project_path, class: "button" do
+      作品を見る
 
